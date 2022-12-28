@@ -24,5 +24,6 @@ module "s3_website" {
   force_destroy      = var.force_destroy
   encryption_enabled = var.encryption_enabled
 
-  context = module.this.context
+  context        = module.this.context
+  error_document = "index.html"
 }

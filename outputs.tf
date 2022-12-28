@@ -32,3 +32,8 @@ output "s3_bucket_hosted_zone_id" {
   value       = join("", aws_s3_bucket.default[*].hosted_zone_id)
   description = "The Route 53 Hosted Zone ID for this bucket's region"
 }
+
+output "s3_bucket_regional_domain_name" {
+  value       = join("", aws_s3_bucket.default[*].bucket_regional_domain_name)
+  description = "The bucket_regional_domain_name"
+}

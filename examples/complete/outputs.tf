@@ -32,3 +32,7 @@ output "s3_bucket_hosted_zone_id" {
   value       = module.s3_website.s3_bucket_hosted_zone_id
   description = "The Route 53 Hosted Zone ID for this bucket's region"
 }
+
+output "s3_bucket_regional_domain_name" {
+  value = module.s3_website.s3_bucket_regional_domain_name
+}
